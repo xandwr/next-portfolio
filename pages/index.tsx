@@ -20,7 +20,7 @@ export default function IndexPage() {
 
 				<div className="flex gap-3">
 					{siteConfig.navItems.slice(1).map((item) => (
-						<NextLink
+						<NextLink key={item.href}
 							className={clsx(
 								linkStyles({ color: "foreground" }),
 								buttonStyles({ variant: "bordered", radius: "full" }),
