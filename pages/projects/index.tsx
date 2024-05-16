@@ -41,7 +41,7 @@ export default function DocsPage() {
         </div>
         <div className="flex sm:max-w-screen-md max-w-lg flex-row gap-8">
           {siteConfig.projectLinks.map((item) => (
-            <Card className="w-full">
+            <Card key={item.href} className="w-full">
               <CardHeader>
                 <div>
                   <p className="sm:text-md text-sm font-semibold max-w-[80%]">{item.name}</p>
